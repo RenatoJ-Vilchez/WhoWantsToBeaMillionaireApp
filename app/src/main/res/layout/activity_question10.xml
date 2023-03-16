@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fallingmoney"
+    android:padding="24dp"
+    tools:context=".Question10">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/prize_money"
+        android:text="Prize Money : $50,000"
+        android:layout_centerHorizontal="true"
+        android:textSize="29dp"
+        android:textStyle="italic"
+        android:textColor="#27B03C"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What is the Celsius equivalent of 77 degrees Fahrenheit? "
+        android:textColor="@color/white"
+        android:textSize='24dp'
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:layout_above="@id/choices_layout"
+        android:id="@+id/Question10"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:id='@+id/choices_layout'>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height ="wrap_content"
+            android:layout_margin="10dp"
+            android:text="25"
+            android:backgroundTint="#27b0a2"
+            android:textColor="@color/black"
+            android:id="@+id/answerA10"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="30"
+            android:backgroundTint="#27b0a2"
+            android:textColor="@color/black"
+            android:id="@+id/answerB10"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="#27b0a2"
+            android:textColor="@color/black"
+            android:text="24"
+            android:id="@+id/answerC10"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="32"
+            android:backgroundTint="#27b0a2"
+            android:textColor="@color/black"
+            android:id="@+id/answerD10"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/next_question10"
+        android:text="Submit Your Answer"
+        android:backgroundTint="#27b02e"
+        android:layout_below="@id/choices_layout"
+        android:layout_marginTop="40dp"
+        />
+
+
+</RelativeLayout>

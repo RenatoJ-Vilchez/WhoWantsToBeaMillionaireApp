@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fallingmoney"
+    tools:context=".WinningActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/congrats_logo"
+        android:text="Congratulations"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="45dp"
+        android:textColor="#2785b0"
+        />
+    <TextView
+        android:id="@+id/You_Won"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/congrats_logo"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="YOU HAVE WON $1,000,000. YOU ARE A WINNER AND NOW  MILLIONAIRE."
+
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#6dc981"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/PlayAgain_BTN"
+        android:text="Want to play again? Click here"
+        android:layout_below="@+id/You_Won"
+        android:backgroundTint="#04705e"
+        android:layout_marginTop="200dp"
+        />
+
+</RelativeLayout>
